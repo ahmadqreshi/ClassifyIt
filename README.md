@@ -1,7 +1,7 @@
 # ClassifyIt
 It is an iOS application that can classify Images of any type.
 
- # Features 
+ ## Features 
 * It is Built by using SwiftUI Framework
 * Used CoreML model for Predictions or Analysis of Images
 * Used MVVM Architecture Pattern
