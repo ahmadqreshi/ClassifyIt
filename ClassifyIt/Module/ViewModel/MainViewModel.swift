@@ -31,7 +31,12 @@ class MainViewModel: ObservableObject {
         guard let image = UIImage(named: images[selectedImageIndex]), let resizedImage = image.resizeTo(size: CGSize(width: 224, height: 224)), let buffer = resizedImage.toBuffer() else { return }
         let output = try? model.prediction(image: buffer)
         if let output = output {
-            resultLabel = "Result: \(output.classLabel.capitalized)"
+            var name = output.classLabel
+            if let firstComma = name.firstIndex(of: ",") {
+                name = String(name.prefix(upTo: firstComma))
+            }
+            
+            resultLabel = "Result: \(name.capitalized)"
             if let accuracy = output.classLabelProbs[output.classLabel] {
                 accuracyLabel = "Accuracy: \(String(format: "%0.2f", accuracy * 100))%"
             }
