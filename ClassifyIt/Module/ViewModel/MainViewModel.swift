@@ -15,7 +15,10 @@ class MainViewModel: ObservableObject {
     @Published var resultLabel: String = ""
     @Published var accuracyLabel: String = ""
 
-    let model = ClassfiyModel()
+    var model: ClassfiyModel! {
+        let config = MLModelConfiguration()
+        return try? ClassfiyModel(configuration: config)
+    }
     
     var images : [String] {
         return ImageAssets.allCases.map { image in
@@ -30,7 +33,7 @@ class MainViewModel: ObservableObject {
         if let output = output {
             resultLabel = "Result: \(output.classLabel.capitalized)"
             if let accuracy = output.classLabelProbs[output.classLabel] {
-                accuracyLabel = "Accuracy: \(String(format: "%0.2f", accuracy))"
+                accuracyLabel = "Accuracy: \(String(format: "%0.2f", accuracy * 100))%"
             }
 
         }
