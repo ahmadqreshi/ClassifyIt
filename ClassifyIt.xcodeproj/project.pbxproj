@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13CD05782A6A90A9007D396F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD05772A6A90A9007D396F /* BaseView.swift */; };
 		13CE72962A693EF50005C87F /* ClassifyItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CE72952A693EF50005C87F /* ClassifyItApp.swift */; };
 		13CE72982A693EF60005C87F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CE72972A693EF60005C87F /* MainView.swift */; };
 		13CE729A2A693EF60005C87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CE72992A693EF60005C87F /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13CD05772A6A90A9007D396F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		13CE72922A693EF50005C87F /* ClassifyIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassifyIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CE72952A693EF50005C87F /* ClassifyItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyItApp.swift; sourceTree = "<group>"; };
 		13CE72972A693EF60005C87F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				13CE72972A693EF60005C87F /* MainView.swift */,
+				13CD05772A6A90A9007D396F /* BaseView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				13CE72962A693EF50005C87F /* ClassifyItApp.swift in Sources */,
 				13CE72A62A6945C70005C87F /* ImageAssets.swift in Sources */,
 				13CE72A42A6941660005C87F /* UIImage+Extensions.swift in Sources */,
+				13CD05782A6A90A9007D396F /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

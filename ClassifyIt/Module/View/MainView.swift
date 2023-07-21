@@ -11,8 +11,7 @@ struct MainView: View {
     
     @StateObject private var mainVM: MainViewModel = MainViewModel()
     var body: some View {
-        ZStack(alignment: .top) {
-            Color.black.ignoresSafeArea()
+        BaseView {
             VStack(spacing: 20) {
                 
                 imagesCorousel
