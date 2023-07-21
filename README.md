@@ -7,5 +7,9 @@ It is an iOS application that can classify Images of any type.
 * Used MVVM Architecture Pattern
 
 
-https://github.com/ahmadqreshi/ClassifyIt/assets/81093987/2bc36d9d-cc6c-4101-b752-d447f49427c7
+
+
+
+
+https://github.com/ahmadqreshi/ClassifyIt/assets/81093987/c60e4098-fc37-4844-b52d-0c0cb8bf00fd
 
