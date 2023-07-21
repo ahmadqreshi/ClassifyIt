@@ -11,7 +11,12 @@ import CoreML
 
 class MainViewModel: ObservableObject {
     
-    @Published var selectedImageIndex: Int = 0
+    @Published var selectedImageIndex: Int = 0 {
+        didSet {
+            resultLabel = ""
+            accuracyLabel = ""
+        }
+    }
     @Published var resultLabel: String = ""
     @Published var accuracyLabel: String = ""
 
